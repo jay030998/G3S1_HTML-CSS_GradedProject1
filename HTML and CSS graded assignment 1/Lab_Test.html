@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab Test</title>
+        <link rel="stylesheet" href="Lab_Test_Style.css">
+    </head>
+    <body>
+        <section>
+            <div>
+         
+                <img src="Lab-Test/lab-test.jpg">
+           
+            <form action="">
+                <article>
+                    <p id="heading1">1. Your Contact Details</p>
+                    <table>
+                        <tr>
+                            <td>
+                            <input type="text" placeholder="Full Name" required>
+                            </td>
+                            <td>
+                            <input type="text" placeholder="Patient Id if exists" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <input type="number" placeholder="Contact Number" min="6000000000" max="9999999999" required>
+                            </td>
+                            <td>
+                            <input type="email" placeholder="Email Id" required>
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <p id="heading2">2. Address</p>
+                    <table>
+                        <tr>
+                            <td>
+                            <input type="text" placeholder="H.No" required>
+                            </td>
+                            <td>
+                            <input type="text" placeholder="Street" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <input type="text" placeholder="Area" required>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3>District</h3>
+                    <select name="District" id="district" required>
+                        <option value="">Choose</option>
+                        <option value="Bangalore Urban">Bangalore Urban</option>
+                        <option value="Bangalore Rural">Bangalore Rural</option>
+                        <option value="Ramnagar">Ramnagar</option>
+                    </select>
+                </article>
+                <article>
+                    <p id="heading3">3. Choose the Test Type</p>
+                    <h3>Check atleast one box without fail</h3>
+                    <input type="checkbox" id="c1" name="option1" value="Over Charge">
+                    <label for="c1">CBC</label>
+                    <br>
+                    <input type="checkbox" id="c2" name="option2" value="Meter Board not working">
+                    <label for="c2">Complete Urine</label>
+                    <br>
+                    <input type="checkbox" id="c3" name="option3" value="Close the meter">
+                    <label for="c2">Lipid Profile</label>
+                    <br>
+                    <input type="checkbox" id="c4" name="option4" value="Hard copy not provided">
+                    <label for="c2">Thyroid Stimulating Hormone(TSH)</label>
+                    <br>
+                    <input type="checkbox" id="c5" name="option5" value="Hard copy not provided">
+                    <label for="c2">Glucose Test</label>
+                    <br>
+                </article>
+                <article>
+                    <p id="heading4">4. Do you want a hard copy of the report also?</p>
+                    <input type="radio" id="c5" name="option" value="True" required>
+                    <label for="c5">Yes</label>
+                    <br>
+                    <input type="radio" id="c6" name="option" value="False">
+                    <label for="c6">No</label>
+                    <br>
+                </article>
+                <article>
+                    <p id="heading5">5. Select Your Comfortable Date and Time</p>
+                    <input type="datetime-local" required>
+                </article>
+                <button>Submit</button>
+                <button>Reset</button>
+            </form>
+            </div>
+        </section>
+    </body>
+</html>
